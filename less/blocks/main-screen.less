@@ -1,0 +1,58 @@
+@media (min-width: @desktop) {
+  .main-screen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: url('../img/paypal-office.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 365px;
+
+    &__inner {
+      display: flex;
+      margin: auto;
+      width: 950px;
+      min-height: 100%;
+    }
+
+    &__logo {
+      padding-top: 50px;
+    }
+
+    &__text {
+      min-height: 365px;
+      width: 70%;
+    }
+
+    &__h1 {
+      color: @base-color;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    &__h1-text {
+      color: @base-color;
+      font-size: 20px;
+      font-weight: normal;
+
+    }
+
+    &__img-inner {
+      position: relative;
+      width: 30%;
+      min-height: 365px;
+    }
+
+    &__img {
+      position: absolute;
+      bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: @tablet) and (max-width: @desktop) {
+
+}
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+
+}

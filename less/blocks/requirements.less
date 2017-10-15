@@ -1,0 +1,42 @@
+@media (min-width: @desktop) {
+  .requirements {
+    display: flex;
+    width: 950px;
+    flex-wrap: wrap;
+    margin: auto;
+
+    h2 {
+      position: relative;
+      padding-top: 20px;
+      font-size: 30px;
+    }
+
+    h2:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 105px;
+      height: 5px;
+      background: url('../img/h2.svg') no-repeat center center;
+      bottom: -10px;
+    }
+
+    ul {
+      list-style-image: url('../img/arrow.svg');
+      line-height: 20px;
+    }
+
+    li {
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: @tablet) and (max-width: @desktop) {
+
+}
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+
+}
