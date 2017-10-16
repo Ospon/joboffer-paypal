@@ -50,9 +50,105 @@
 }
 
 @media (min-width: @tablet) and (max-width: @desktop) {
+  .main-screen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: url('../img/paypal-office.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 365px;
+    padding: 0px 40px;
 
+    &__inner {
+      display: flex;
+      width: 100%;
+      min-height: 100%;
+      margin: auto;
+    }
+
+    &__logo {
+      padding-top: 50px;
+    }
+
+    &__text {
+      min-height: 365px;
+      width: 70%;
+      padding-bottom: 40px;
+    }
+
+    &__h1 {
+      color: @base-color;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    &__h1-text {
+      color: @base-color;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    &__img-inner {
+      position: relative;
+      width: 30%;
+      min-height: 365px;
+    }
+
+    &__img {
+      position: absolute;
+      bottom: 0px;
+    }
+  }
 }
 
 @media (min-width: @mobile) and (max-width: @tablet) {
+  .main-screen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: url('../img/paypal-office.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 365px;
+    padding: 0px 20px;
 
+    &__inner {
+      display: flex;
+      width: 100%;
+      min-height: 100%;
+      margin: auto;
+    }
+
+    &__logo {
+      padding-top: 50px;
+    }
+
+    &__text {
+      min-height: 365px;
+      width: 90%;
+    }
+
+    &__h1 {
+      color: @base-color;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    &__h1-text {
+      color: @base-color;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    &__img-inner {
+      display: none;
+      position: relative;
+      width: 40%;
+      min-height: 365px;
+    }
+
+    &__img {
+      position: absolute;
+      bottom: 0px;
+    }
+  }
 }

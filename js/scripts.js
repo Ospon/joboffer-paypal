@@ -1,18 +1,24 @@
-var a = 'a';
+var apply = document.querySelector('.offer__btn');
+var popup = document.querySelector('.modal-window');
+var close = document.querySelector('.modal-window__exit');
+var hide = document.querySelector('.modal-window--hide');
+var show = document.querySelector('.modal-window--show');
 
-function urovenb() {
-  var b = 'b';
+apply.addEventListener('click', function(event) {
+  event.preventDefault();
+  popup.classList.remove('modal-window--hide');
+});
 
-  function urovenc() {
-    var c = 'c';
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.add("modal-window--hide");
+});
 
-    function urovend() {
-      var d = 'd';
-
-      console.log('urovend', a, b, c, d);
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal-window--show")) {
+      popup.classList.remove("modal-window--show");
+      popup.classList.add("modal-window--hide");
     }
-    console.log('urovenc', a, b, c);
   }
-  console.log('urovenb', a, b);
-}
-console.log('globalni', a);
+});
